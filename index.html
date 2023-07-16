@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/imgs/calculadora.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/dark-mode.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <script defer src="./src/js/mudar-tema.js"></script>
+    <script defer src="./src/js/index.js"></script>
+
+    <title>Calcular Média</title>
+</head>
+<body>
+    <header class="head">
+        <h1>Calculadora de Média</h1>
+        <span>Descubra qual a média de nota do seu Bimestre e do seu ano!</span>
+
+        <div class="box-options">
+            <button class="btn-options opacity-btn" id="btn-ano" onclick="btnAno()">Ano</button>
+            <button class="btn-options" id="btn-bimestre" onclick="btnBimestre()">Bimestre</button>
+        </div>
+
+        <button class="btn-tema" onclick="mudarTema()">
+            <img src="./src/imgs/sun.png" alt="Imagem do Sol." class="img-tema">
+        </button>
+    </header>
+
+    <main class="main">
+        <img src="./src/imgs/calculadora.png" alt="Imagem de uma calculadora fofa.">
+
+        <section class="container">
+
+            <section id="box-ano">
+                <span>Nota do:</span>
+
+                <form class="form">
+                    <label for="primeiro-bimestre">Primeiro Bimestre:
+                        <input type="number" name="primeiro-bimestre" id="primeiro-bimestre" min="0" max="10" required />
+                    </label>
+
+                    <label for="primeiro-bimestre">Segundo Bimestre:
+                        <input type="number" name="primeiro-bimestre" id="segundo-bimestre" min="0" max="10" required />
+                    </label>
+
+                    <label for="primeiro-bimestre">Terceiro Bimestre:
+                        <input type="number" name="primeiro-bimestre" id="terceiro-bimestre" min="0" max="10" required />
+                    </label>
+
+                    <label for="primeiro-bimestre">Quarto Bimestre:
+                        <input type="number" name="primeiro-bimestre" id="quarto-bimestre" min="0" max="10" required />
+                    </label>
+
+                    <button type="submit" class="btn-media-bims" disabled>Calcular média</button>
+                </form>
+
+                <p class="mediaAno resultado"></p>
+            </section>
+
+            <section id="box-bimestre">
+
+                <div id="qtd-materias">
+                    <label for="materias">Quantas matérias serão?
+                        <input type="number" name="materias" id="inp-materias" max="16" required>
+                    </label>
+
+                    <button class="btn-materias-qtd" onclick="btnMaterias()" disabled>Continuar</button>
+                </div>
+
+                <div id="container-materias">
+                    <h1>Nota das Matérias</h1>
+
+                    <div id="container-materias-inp"></div>
+
+                    <button type="submit" class="btn-media-materias">Calcular média das matérias</button>
+
+                    <p class="mediaMaterias resultado"></p>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <h3>Attributions</h3>
+            <ul>
+                <li><a target="_blank" href="https://br.vexels.com/png-svg/previsualizar/205996/desenho-de-calculadora-fofo">br.vexels.com</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/summer" title="summer icons">Summer icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Freepik - Flaticon</a></li>
+            </ul>
+        </div>
+
+        <span>Desenvolvedora da página: Paola da Costa Damasceno</span>
+    </footer>
+</body>
+</html>

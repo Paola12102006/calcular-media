@@ -1,0 +1,50 @@
+body.dark {
+    background-color: #1e3753;
+    color: #ddd;
+}
+
+body.dark .head {
+    color: #cfe0f3;
+}
+
+body.dark .main .container #box-ano .form label input {
+    background-color: #cfe0f3;
+}
+
+body.dark .resultado {
+    background-color: #88b3e469;
+    padding: 10px 20px;
+    box-shadow: 8px -8px #76a4daa2;
+}
+
+body.dark .main .container #box-bimestre #qtd-materias input {
+    background-color: #9cbbcf;
+}
+
+body.dark .main .container #box-bimestre #qtd-materias .btn-materias-qtd {
+    color: #9cbbcf;
+    background-color: #08131a;
+}
+
+body.dark .main .container #box-bimestre #container-materias #container-materias-inp input {
+    background-color: #b3bdc4;
+}
+
+body.dark .main .container #box-bimestre #container-materias .btn-media-materias {
+    background-color: #001f42;
+    color: #d3e7ff;
+}
+
+
+body.dark footer {
+    background-color: #2e4a69;
+    color: #d9f1fcb9;
+}
+
+body.dark footer ul li a {
+    color: #87a6cae5;
+}
+
+body.dark footer ul li a:hover {
+    color: #afd1f8;
+}
